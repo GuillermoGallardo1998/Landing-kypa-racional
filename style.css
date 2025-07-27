@@ -124,7 +124,7 @@ body.no-scroll {
 
 .main-presentation {
 	background-color: var(--bg-color);
-	min-height: calc(95vh - 140px);;
+	min-height: calc(100dvh - 140px);;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -592,7 +592,6 @@ body.no-scroll {
 
 @media (min-width: 768px) {
 	.main-presentation {
-		min-height: calc(100vh - 140px);
 		flex-direction: row;
 		padding: 0 30px;
 	}
