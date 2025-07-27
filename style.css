@@ -37,7 +37,7 @@
 }
 
 .navbar-logo {
-  width: 80px;
+  width: 120px;
 }
 
 .navbar-links {
@@ -149,7 +149,7 @@ body.no-scroll {
 }
 
 .main-presentation-info h3 {
-	max-width: 500px;
+	max-width: 700px;
 }
 
 .main-presentation-info button {
@@ -302,7 +302,10 @@ body.no-scroll {
 }
 
 .main-resvation-form-ImgInfo {
-	background-image: url(./images/imagen-de-muestra.png);
+	background-image: url(./images/IMG_5093.JPG);
+	background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
 	width: 100%;
 	height: 300px;
 	display: flex;
@@ -312,7 +315,7 @@ body.no-scroll {
 
 .main-resvation-form-Info {
 	background-color: var(--bg-color);
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
 	width: 70%;
 	display: flex;
 	flex-direction: column;
@@ -321,6 +324,7 @@ body.no-scroll {
 	padding: 20px;
 	color: var(--bg-color);
 	text-align: center;
+	padding: 80px 10px;
 }
 
 .formService {
@@ -486,7 +490,7 @@ body.no-scroll {
 }
 
 .main-testimony-content img {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
 }
 
@@ -507,6 +511,8 @@ body.no-scroll {
 
 .main-faq-option {
   width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
   border-bottom: 2px solid var(--text-color-black);
   overflow: hidden;
 }
@@ -520,7 +526,7 @@ body.no-scroll {
 }
 
 .toggle {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: var(--text-color-kypa);
   transition: transform 0.3s ease;
@@ -533,7 +539,7 @@ body.no-scroll {
   transition: max-height 0.2s ease, opacity 1s ease;
   font-size: 14px;
   line-height: 1.4;
-	
+
 }
 
 .main-faq-option.open p {
@@ -591,51 +597,39 @@ body.no-scroll {
 }
 
 @media (min-width: 768px) {
-	.main-presentation {
-		flex-direction: row;
-		padding: 0 30px;
-	}
-
-	.main-AboutUs {
-		flex-direction: row;
-		padding: 50px 20px;
-	}
-
-	.main-services {
-		align-items: flex-start;
-		padding: 50px 80px;
-	}
-
-	.main-services-info {
-		display: flex;
-		flex-direction: row;
-		gap: 30px;
-	}
-
-	.main-operation-IconBoxes:first-child {
-		border-bottom: 2px solid var(--text-color-kypa);
-	}
-
-	.main-operation-IconBox {
-		flex-direction: row;
-		gap: 60px;
-	}
-
-  .toggle {
-    font-size: 24px;
+  .main-presentation,
+  .main-AboutUs,
+  .main-operation-IconBox,
+  .footer {
+    flex-direction: row;
   }
 
-  .main-faq-option {
-    max-width: 800px;
-    margin: 0 auto;
+  .main-presentation { padding: 0 30px; }
+  .main-AboutUs { padding: 50px 20px; }
+
+  .main-services {
+    align-items: flex-start;
+    padding: 50px 80px;
   }
 
-	.footer {
+  .main-services-info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 20px 40px 40px 40px;
-	}
+  .main-operation-IconBox { gap: 60px; }
+  .main-operation-IconBox:first-child {
+    border-bottom: 2px solid var(--text-color-kypa);
+  }
+
+  .main-faq-option { max-width: 800px; }
+  .toggle { font-size: 40px; }
+
+  .footer {
+    justify-content: space-between;
+    padding: 20px 40px 40px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -649,39 +643,134 @@ body.no-scroll {
     gap: 25px;
   }
 
-  .navbar-links li a {
-    font-size: 18px;
+  .navbar-links li a { font-size: 18px; }
+  .navbar-hamburger { display: none; }
+
+  .main-presentation-img {
+    width: 350px;
+    height: 370px;
   }
 
-  .navbar-hamburger {
-    display: none;
+  .main-AboutUs-img {
+    width: 100%;
+    height: 500px;
   }
+
+  .main-resvation-form {
+    max-width: 100%;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .main-resvation-form-ImgInfo { height: 400px; }
+  .main-operation-IconBox { gap: 150px; }
+  .main-testimony-content { flex-direction: row; }
+  .main-faq-option { max-width: 1000px; }
+  .toggle { font-size: 50px; }
+}
+
+@media (min-width: 1440px) {
+	.header { min-height: 100px; }
+	.navbar-logo { width: 160px; }
+	.navbar-links li a { font-size: 26px; }
+
+	.main-presentation { min-height: calc(100dvh - 180px); }
+	.main-presentation-info { gap: 30px; }
+	.main-presentation-info h1 { font-size: 56px; }
+	.main-presentation-info h3 { font-size: 30px; }
+
+	.main-presentation-info button {
+		font-size: 26px;
+		padding: 10px 15px;
+	}
 
 	.main-presentation-img {
-		width: 350px;
-		height: 370px;
+		width: 600px;
+		height: 620px;
 	}
+
+	.main-AnimatedBar { height: 80px; }
+	.main-AnimatedBar-scroll p { font-size: 26px; }
+	.main-AnimatedBar-scroll img { width: 40px; }
+
+	.main-AboutUs,
+	.main-services,
+	.main-resvation,
+	.main-operation,
+	.main-testimony {
+		padding: 80px 60px;
+	}
+
+	.main-AboutUs { padding-top: 120px; }
 
 	.main-AboutUs-img {
-		width: 100%;
-		height: 500px;
+		width: 800px;
+		height: 700px;
 	}
 
-	.main-resvation-form {
-		max-width: 100%;
-		flex-direction: row;
-		gap: 50px;
+	.main-AboutUs-info h2,
+	.main-services h2,
+	.main-resvation h2,
+	.main-operation h2,
+	.main-testimony h2,
+	.main-faq h2 {
+		font-size: 56px;
 	}
 
-	.main-resvation-form-ImgInfo {
-		height: 400px;
+	.main-services-info_type h3,
+	.main-resvation-form-Info h3,
+	.main-operation-IconBox-step h3,
+	.main-testimony-comment h3,
+	.faq-header h3 {
+		font-size: 34px;
 	}
+
+	.main-AboutUs-info p,
+	.main-services-info_type p,
+	.main-resvation-form-Info p,
+	.formService-request label,
+	.formService-request input,
+	.main-testimony-comment p,
+	.main-faq-option p,
+	.footer-contact p,
+	.footer-kypaSocial h3,
+	.footer-policy p {
+		font-size: 24px;
+	}
+
+	.main-resvation-form-ImgInfo { height: 700px; }
+	.main-resvation-form-Info { gap: 30px; }
+	.formService { gap: 50px; }
 
 	.main-operation-IconBox {
-		gap: 150px;
+		padding: 40px 250px;
+		gap: 240px;
 	}
 
-	.main-testimony-content {
-		flex-direction: row;
+	.main-operation-icon { width: 150px; }
+
+	.slider-btn {
+		all: unset;
+		text-align: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		font-size: 50px;
+		cursor: pointer;
 	}
+
+	.main-testimony-content { gap: 100px; }
+
+	.main-faq {
+		background-color: var(--bg-color);
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 80px 0 200px;
+	}
+
+	.main-faq-option { max-width: 1200px; }
+	.footer { padding: 80px 40px; }
+	.footer-kypaSocial-link-icon img { width: 90px; }
 }
+
