@@ -612,7 +612,7 @@ body.no-scroll {
 		gap: 30px;
 	}
 
-	.main-operation-IconBoxes > :first-child {
+	.main-operation-IconBoxes:first-child {
 		border-bottom: 2px solid var(--text-color-kypa);
 	}
 
@@ -620,8 +620,6 @@ body.no-scroll {
 		flex-direction: row;
 		gap: 60px;
 	}
-
-
 
   .toggle {
     font-size: 24px;
