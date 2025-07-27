@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="style.css">
+	<title>Kypa</title>
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar">
+			<img class="navbar-logo" src="/images/kypa-logo.jpeg" alt="Logo de Kypa">
+			<ul class="navbar-links">
+				<li><a href="#main-AboutUs">Sobre nosotros</a></li>
+				<li><a href="#main-services">Servicios</a></li>
+				<li><a href="#main-resvation">Reserva</a></li>
+				<li><a href="#main-operation">Nuestro proceso</a></li>
+				<li><a href="#main-testimony">Testimonios</a></li>
+				<li><a href="#main-faq">Preguntas frecuentes</a></li>
+			</ul>
+			<button class="navbar-hamburger" id="navbar-hamburger" aria-label="Abrir menú">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</nav>
+	</header>
+
+	<main>
+		<section class="main-presentation">
+			<div class="main-presentation-info">
+				<h1>Hola, soy Kypa</h1>
+				<h3>Mujeres expertas, capacitadas y comprometidas con transformar hogares… y sus propias vidas.</h3>
+				<button>Reserva Ahora</button>
+			</div>
+			<img class="main-presentation-img" src="/images/imagen-de-muestra.png" alt="">
+		</section>
+
+		<section class="main-AnimatedBar">
+			<div class="main-AnimatedBar-scroll">
+				<p>Aseo especializado</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Cocina del día a día</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Cuidado infantil y del adulto mayor</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Jardinería y organización de espacios</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Lavado de muebles y limpieza profunda</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Home Shopper</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<!-- INFINITE EFFECT -->
+				<p>Aseo especializado</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Cocina del día a día</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Cuidado infantil y del adulto mayor</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Jardinería y organización de espacios</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Lavado de muebles y limpieza profunda</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+				<p>Home Shopper</p>
+				<img src="/images/circle-button-arrow.png" alt="Down Arrow">
+			</div>
+		</section>
+
+		<section class="main-AboutUs" id="main-AboutUs">
+			<img class="main-AboutUs-img" src="/images/imagen-de-muestra.png" alt="">
+			<div class="main-AboutUs-info">
+				<h2>Sobre Nosotros</h2>
+				<p>
+					Una red de mujeres que cuidan como nadie.
+					ConAcción es más que una plataforma de servicios del hogar. Es una iniciativa que conecta a mujeres capacitadas, verificadas y empoderadas con hogares que valoran el cuidado, la confianza y el bienestar. Aquí, tú y ellas encuentran nuevas oportunidades.
+					<br>
+					ConAcción es más que una plataforma de servicios del hogar. Es una iniciativa que conecta a mujeres capacitadas, verificadas y empoderadas con hogares que valoran el cuidado, la confianza y el bienestar. Aquí, tú y ellas encuentran nuevas oportunidades.
+				</p>
+			</div>
+		</section>
+
+		<section class="main-services" id="main-services">
+			<h2>Servicios</h2>
+			<div class="main-services-info">
+				<article class="main-services-info_type">
+					<h3>Aseo especializado</h3>
+					<p>ConAcción es más que una plataforma de servicios del hogar. Es una iniciativa que conecta a mujeres capacitadas, verificadas y empoderadas con hogares que valoran el cuidado, la confianza y el bienestar. Aquí, tú y ellas encuentran nuevas oportunidades.</p>
+				</article>
+				<article class="main-services-info_type">
+					<h3>Aseo especializado</h3>
+					<p>ConAcción es más que una plataforma de servicios del hogar. Es una iniciativa que conecta a mujeres capacitadas, verificadas y empoderadas con hogares que valoran el cuidado, la confianza y el bienestar. Aquí, tú y ellas encuentran nuevas oportunidades.</p>
+				</article>
+				<article class="main-services-info_type">
+					<h3>Aseo especializado</h3>
+					<p>ConAcción es más que una plataforma de servicios del hogar. Es una iniciativa que conecta a mujeres capacitadas, verificadas y empoderadas con hogares que valoran el cuidado, la confianza y el bienestar. Aquí, tú y ellas encuentran nuevas oportunidades.</p>
+				</article>
+			</div>
+		</section>
+		<section class="main-resvation" id="main-resvation">
+			<h2>Reservaciones</h2>
+			<div class="main-resvation-form">
+				<div class="main-resvation-form-ImgInfo">
+					<div class="main-resvation-form-Info">
+						<h3>¿Quieres que cuidemos tu hogar?</h3>
+						<p> Déjanos tus datos y una asesora se comunicará contigo:</p>
+					</div>
+				</div>	
+				<form class="formService" action="/enviar" method="post">
+					<div class="formService-request">
+						<label for="nombre">Nombre:</label>
+						<input type="text" id="nombre" name="nombre" 
+									required placeholder="Ej: Daniel Ramírez Torres" 
+									minlength="3">
+					</div>
+					<div class="formService-request">
+						<label for="correo">Correo electrónico:</label>
+						<input type="email" name="correo" required placeholder="Ej: micorreo@kypa.com.co">
+					</div>
+					<div class="formService-request">
+						<label for="telefono">Número de teléfono:</label>
+						<input type="tel" id="telefono" name="telefono" 
+									pattern="[0-9]{10}" inputmode="numeric" 
+									required placeholder="Ej: 3001234567">
+					</div>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="main-operation" id="main-operation">
+			<h2>Como funciona</h2>
+			<div class="main-operation-IconBoxes">
+				<div class="main-operation-IconBox">
+					<article class="main-operation-IconBox-step ">
+						<img class="main-operation-icon" src="/images/profile-user.png" alt="">
+						<h3>titulo</h3>
+					</article>
+					<article class="main-operation-IconBox-step">
+						<img class="main-operation-icon" src="/images/profile-user.png" alt="">
+						<h3>titulo</h3>
+					</article>
+					<article class="main-operation-IconBox-step">
+						<img class="main-operation-icon" src="/images/profile-user.png" alt="">
+						<h3>titulo</h3>
+					</article>
+				</div>
+				<div class="main-operation-IconBox">
+					<article class="main-operation-IconBox-step">
+						<img class="main-operation-icon" src="/images/profile-user.png" alt="">
+						<h3>titulo</h3>
+					</article>
+					<article class="main-operation-IconBox-step">
+						<img class="main-operation-icon" src="/images/profile-user.png" alt="">
+						<h3>titulo</h3>
+					</article>
+					<article class="main-operation-IconBox-step">
+						<img class="main-operation-icon" src="/images/profile-user.png" alt="">
+						<h3>titulo</h3>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-testimony" id="main-testimony">
+			<h2>Testimonios</h2>
+			<div class="main-testimony-content">
+				
+				<div class="main-testimony-slider">
+					<button id="prev" class="slider-btn"><</button>
+
+					<div class="slider-window">
+						<div class="main-testimony-track">
+							<div class="main-testimony-comment">
+								<h3>Marcela G</h3>
+								<p>"Me sentí segura desde el primer momento. Una mujer amable, profesional y dedicada dejó mi hogar impecable."</p>
+							</div>
+							<div class="main-testimony-comment">
+								<h3>Camilo R</h3>
+								<p>"Lo que más me gusta es que apoyo a otras mujeres y al mismo tiempo recibo un servicio excelente."</p>
+							</div>
+						</div>
+					</div>
+
+					<button id="next" class="slider-btn">></button>
+				</div>
+
+				<img src="/images/imagen-de-muestra.png" alt="">
+			</div>
+		</section>
+
+		<section class="main-faq" id="main-faq">
+			<h2>Preguntas Frecuentes</h2>
+
+			<div class="main-faq-option">
+				<div class="faq-header">
+					<h3>¿Dónde empezamos?</h3>
+					<span class="toggle">+</span>
+				</div>
+				<p>Lo primero de todo, no dejes que te venzan los nervios. Empezaremos con una consulta gratuita para determinar tus necesidades de diseño (y si seremos grandes colaboradores).</p>
+			</div>
+
+			<div class="main-faq-option">
+				<div class="faq-header">
+					<h3>¿Cuál es el siguiente paso?</h3>
+					<span class="toggle">+</span>
+				</div>
+				<p>Después de la consulta, diseñaremos un plan adaptado a tus necesidades.</p>
+			</div>
+
+			<div class="main-faq-option">
+				<div class="faq-header">
+					<h3>¿Cómo trabajaremos juntos?</h3>
+					<span class="toggle">+</span>
+				</div>
+				<p>Estaremos en contacto constante y recibirás actualizaciones periódicas.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+
+		<div class="footer-contact">
+			<p>123-456-7890</p>
+			<p>info@mysite.com</p>
+			<p>
+				500 Terry Francine 
+				<br>
+				St. San Francisco, CA 94158
+			</p>
+		</div>
+
+		<div class="footer-kypaSocial">
+			<img class="footer-kypaSocial-logo" src="/images/kypa-logo.jpeg" alt="">
+			<h3>Visita nuestras redes sociales</h3>
+			<div class="footer-kypaSocial-link">
+				<a class="footer-kypaSocial-link-icon" href="/">
+					<img src="/images/profile-user.png" alt="">
+				</a>
+				<a class="footer-kypaSocial-link-icon" href="/">
+					<img src="/images/profile-user.png" alt="">
+				</a>
+				<a class="footer-kypaSocial-link-icon" href="/">
+					<img src="/images/profile-user.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="footer-policy">
+			<p>
+				© 2025 Kypa. 
+				<br>
+				Todos los derechos reservados.
+			</p>
+		</div>
+
+	</footer>
+
+	<script src="/script.js"></script>
+</body>
+</html>
