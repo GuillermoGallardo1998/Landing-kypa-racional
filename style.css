@@ -182,7 +182,7 @@ body.no-scroll {
 	font-size: 12px;
 }
 
-.main-presentation-info button {
+.main-presentation-info a {
   all: unset;
   cursor: pointer;
 	background-color: var(--text-color-kypa);
@@ -192,7 +192,7 @@ body.no-scroll {
 	padding: 10px 15px;
 }
 
-.main-presentation-info button:hover {
+.main-presentation-info a:hover {
 	background-color: var(--bg-color);
 	color: var(--text-color-kypa);
 	border: solid var(--text-color-kypa);
@@ -756,8 +756,12 @@ body.no-scroll {
 		flex-direction: row; /* Ya lo tienes */
 	}
 
-	.main-testimony > div {
-		max-width: 50%; /* Se asegura de no pasarse */
+		.main-testimony > div:nth-child(1) {
+			flex: 0 0 40%; /* Primer div ocupa 60% */
+	}
+
+	.main-testimony > div:nth-child(2) {
+			flex: 0 0 60%; /* Segundo div ocupa 40% */
 	}
 
   .main-resvation-ImgInfo { height: 500px; }
@@ -765,6 +769,7 @@ body.no-scroll {
   .main-faq-option { max-width: 1000px; }
   .toggle { font-size: 50px; }
 	.main-testimony-content { gap: 80px; }
+
 	.footer { 
 		padding: 80px 120px; 
 		font-size: 20px;
@@ -781,7 +786,7 @@ body.no-scroll {
 	.main-presentation-info h1 { font-size: 56px; }
 	.main-presentation-info h3 { font-size: 30px; }
 
-	.main-presentation-info button {
+	.main-presentation-info a {
 		font-size: 26px;
 		padding: 10px 15px;
 	}
@@ -797,14 +802,12 @@ body.no-scroll {
 
 	.main-AboutUs,
 	.main-services,
-	.main-resvation,
-	.main-operation,
-	.main-testimony {
+	.main-operation {
 		padding: 80px 60px;
 	}
 
-	
-
+	.main-resvation { padding: 100px 60px 80px 60px; }
+	.main-testimony {	padding: 80px 150px; }
 	.main-AboutUs { padding-top: 120px; }
 
 	.main-AboutUs-img {

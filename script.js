@@ -1,4 +1,4 @@
-// ===== MENÚ HAMBURGUESA =====
+// ===== HAMBURGER MENU =====
 const hamburger = document.getElementById('navbar-hamburger');
 const navLinks = document.querySelector('.navbar-links');
 const links = document.querySelectorAll('.navbar-links a');
@@ -19,7 +19,7 @@ if (hamburger && navLinks) {
   });
 }
 
-// ===== SLIDER DE TESTIMONIOS =====
+// ===== TESTIMONIALS SLIDER =====
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".main-testimony-track");
   const slides = document.querySelectorAll(".main-testimony-comment");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
+// ===== FAQ ANIMATION =====
 document.addEventListener("DOMContentLoaded", () => {
   const faqOptions = document.querySelectorAll(".main-faq-option");
 
