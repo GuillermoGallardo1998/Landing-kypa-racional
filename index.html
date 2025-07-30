@@ -6,9 +6,9 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-	<link rel="icon" href="./images/shortLogo-kypa.PNG" type="image/png">
+	<link rel="icon" href="./images/favicon.PNG" type="image/png">
 	<link rel="stylesheet" href="./style.css">
 	<title>Kypa</title>
 </head>
@@ -35,56 +35,57 @@
 	<main>
 		<section class="main-presentation">
 			<div class="main-presentation-info">
-				<h1>Hola, soy Kypa</h1>
+				<h1>HOLA, SOY KYPA</h1>
 				<h3>Mujeres expertas, capacitadas y comprometidas con transformar hogares… y sus propias vidas.</h3>
 				<a href="#main-resvation" class="btn">Reserva Ahora</a>
-				<p>Reserva y obtén 50% de descuento</p>
+				<p>Reserva con 50% de descuento</p>
 			</div>
 			<img class="main-presentation-img" src="./images/IMG_5094.JPG" alt="">
 		</section>
 
 		<section class="main-AnimatedBar">
 			<div class="main-AnimatedBar-scroll">
-				<p>Aseo especializado</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Cuidado infanti</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Cuidado adulto mayor</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Cocina y Catering</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Lavado de muebles</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Jardinería</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Organización de espacios</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Limpieza profunda </p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
+				<p>ASEO ESPECIALIZADO</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>CUIDADO INFANTIL</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>CUIDADO ADULTO MAYOR</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>COCINA Y CATERING</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>LAVADO DE MUEBLES</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>JARDINERÍA</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>ORGANIZACIÓN DE ESPACIOS</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>LIMPIEZA PROFUNDA</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
 				<!-- INFINITE EFFECT -->
-				<p>Aseo especializado</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Cuidado infanti</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Cuidado adulto mayor</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Cocina y Catering</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Lavado de muebles</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Jardinería</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Organización de espacios</p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
-				<p>Limpieza profunda </p>
-				<img src="./images/circle-button-arrow.png" alt="Down Arrow">
+				<p>ASEO ESPECIALIZADO</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>CUIDADO INFANTIL</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>CUIDADO ADULTO MAYOR</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>COCINA Y CATERING</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>LAVADO DE MUEBLES</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>JARDINERÍA</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>ORGANIZACIÓN DE ESPACIOS</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
+				<p>LIMPIEZA PROFUNDA</p>
+				<img src="./images/favicon.PNG" alt="Down Arrow">
 			</div>
 		</section>
+
 
 		<section class="main-AboutUs" id="main-AboutUs">
 			<img class="main-AboutUs-img" src="./images/IMG_5086.JPG" alt="">
 			<div class="main-AboutUs-info">
-				<h2>Sobre Nosotros</h2>
+				<h2>Somos Kypa</h2>
 				<p>
 					<strong>Una red de mujeres que cuidan como nadie.</strong>
 					<br><br>
@@ -125,18 +126,25 @@
 					<div class="formService-request">
 						<label for="nombre">Nombre completo:</label>
 						<input type="text" id="nombre" name="nombre" 
-									required placeholder="Ej: Daniel Ramírez Torres" 
-									minlength="3">
+							required placeholder="Ej: Daniel Ramírez Torres" 
+							minlength="3" 
+							pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,60}$" 
+							title="Solo se permiten letras y espacios (mínimo 3 caracteres)">
 					</div>
 					<div class="formService-request">
 						<label for="correo">Correo electrónico:</label>
-						<input type="email" name="correo" required placeholder="Ej: micorreo@kypa.com.co">
+						<input type="email" id="correo" name="correo" required 
+							placeholder="Ej: micorreo@kypa.com.co" 
+							pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+							title="Ingresa un correo válido">
 					</div>
 					<div class="formService-request">
 						<label for="telefono">Número de teléfono / WhatsApp:</label>
-						<input type="tel" id="telefono" name="telefono" 
-									pattern="[0-9]{10}" inputmode="numeric" 
-									required placeholder="Ej: 3001234567">
+						<input type="tel" id="telefono" name="telefono"
+							pattern="^(\+?\d{1,3})?\d{10}$"
+							inputmode="tel"
+							required placeholder="Ej: +573001234567 o 3001234567"
+							title="Debe contener el código de país opcional (+57) seguido de 10 dígitos">
 					</div>
 					<button type="submit">Enviar</button>
 				</form>
@@ -148,29 +156,29 @@
 			<div class="main-operation-box">
 				<div class="main-operation-IconBox">
 					<article class="main-operation-IconBox-step">
-						<img class="main-operation-icon" src="./images/profile-user.png" alt="">
+						<img class="main-operation-icon" src="./images/icono_registro.png" alt="icono Realiza tu registro">
 						<h3>Realiza tu registro</h3>
 					</article>
 					<article class="main-operation-IconBox-step">
-						<img class="main-operation-icon" src="./images/profile-user.png" alt="">
+						<img class="main-operation-icon" src="./images/icono_agenda.png" alt="icono Agenda una Kypa">
 						<h3>Agenda una Kypa</h3>
 					</article>
 					<article class="main-operation-IconBox-step">
-						<img class="main-operation-icon" src="./images/profile-user.png" alt="">
+						<img class="main-operation-icon" src="./images/icono_confirmacion_y_pago.png" alt="icono Confirmación y pago del servicio">
 						<h3>Confirmación y pago del servicio</h3>
 					</article>
 				</div>
 				<div class="main-operation-IconBox">
 					<article class="main-operation-IconBox-step">
-						<img class="main-operation-icon" src="./images/profile-user.png" alt="">
+						<img class="main-operation-icon" src="./images/icono_kypa_en_casa.png" alt="icono Llega una Kypa a tu hogar">
 						<h3>Llega una Kypa a tu hogar</h3>
 					</article>
 					<article class="main-operation-IconBox-step">
-						<img class="main-operation-icon" src="./images/profile-user.png" alt="">
-						<h3>Califica y recomienda a Kypa</h3>
+						<img class="main-operation-icon" src="./images/icono_califica.png" alt="icono Califica y recomienda">
+						<h3>Califica y recomienda</h3>
 					</article>
 					<article class="main-operation-IconBox-step">
-						<img class="main-operation-icon" src="./images/profile-user.png" alt="">
+						<img class="main-operation-icon" src="./images/icono_nueva_agenda.png" alt="icono Vuelve a agendar">
 						<h3>Vuelve a agendar</h3>
 					</article>
 				</div>
@@ -239,7 +247,7 @@
 		</div>
 		<div class="footer-kypaSocial">
 			<img class="footer-kypaSocial-logo" src="./images/logo-kypa.PNG" alt="">
-			<h3>Visita nuestras redes sociales</h3>
+			<p>Visita nuestras redes sociales</p>
 			<div class="footer-kypaSocial-link">
 				<a class="footer-kypaSocial-link-icon" href="/">
 					<img src="./images/profile-user.png" alt="">
