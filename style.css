@@ -182,7 +182,7 @@ body.no-scroll {
 	color: var(--text-color-kypa);
 }
 
-.main-presentation-info h3 {
+.main-presentation-info h2 {
 	max-width: 500px;
 	font-weight: normal;
 	font-size: 16px;
@@ -217,6 +217,8 @@ body.no-scroll {
 	border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   animation: slideInRight 1.5s ease-out forwards;
+	object-fit: cover;
+	object-position: top;
 }
 
 @keyframes slideInRight {
@@ -276,11 +278,9 @@ body.no-scroll {
   }
 }
 
-
-
 .main-AboutUs {
 	background-color: var(--text-color-kypa);
-	height: 100%;
+	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -291,7 +291,7 @@ body.no-scroll {
 
 .main-AboutUs-img {
 	border-radius: 10px;
-	width: 100%;
+	width: 300px;
 	height: 340px;
 	object-fit: cover;
 	object-position: top;
@@ -364,7 +364,7 @@ body.no-scroll {
 
 .main-resvation {
 	background-color: var(--text-color-kypa);
-	height: 100%;
+	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -423,12 +423,6 @@ body.no-scroll {
 	gap: 30px;	
 }
 
-.main-resvation-form h2 {
-	color: var(--text-color-white);	
-	font-size: 36px;
-	text-align: center;
-}
-
 .formService {
   width: 100%;
   margin: 0 auto;
@@ -472,9 +466,9 @@ body.no-scroll {
 .formService button {
   all: unset;
   cursor: pointer;
-	background-color: var(--text-color-kypa);
-	color: var(--bg-color);
-	border: solid var(--text-color-kypa);
+	background-color: var(--text-color-white);
+	color: var(--text-color-kypa);
+	border: solid var(--text-color-white);
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 	text-align: center;
@@ -483,14 +477,13 @@ body.no-scroll {
 }
 
 .formService button:hover {
-  background-color: var(--bg-color);
-	color: var(--text-color-kypa);
-	border: solid var(--text-color-kypa);
+  background-color: var(--text-color-kypa);
+	color: var(--text-color-white);
 }
 
 .main-operation {
 	background-color: var(--bg-color);
-	height: 100%;
+	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -543,28 +536,34 @@ body.no-scroll {
   align-items: center;
   gap: 50px;
   padding: 50px 20px;
+  overflow-x: hidden; 
+	min-height: 100dvh;
 }
 
 .main-testimony-content {
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 50px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .main-testimony-content h2 {
   color: var(--text-color-kypa);
   font-size: 36px;
+  text-align: center;
 }
 
 .main-testimony-slider {
   display: flex;
-	justify-content: center;
+  justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 100%;
   max-width: 600px;
+  box-sizing: border-box;
 }
 
 .slider-window {
@@ -575,41 +574,50 @@ body.no-scroll {
 .main-testimony-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .main-testimony-comment {
   flex: 0 0 100%;
   text-align: center;
   box-sizing: border-box;
+  padding: 0 10px;
 }
 
 .main-testimony-comment h3 {
-	font-size: 22px;
+  font-size: 22px;
   padding-bottom: 20px;
-	color: var(--text-color-kypa);
+  color: var(--text-color-kypa);
 }
 
 .slider-btn {
-	all: unset;
-	text-align: center;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	font-size: 30px;
-	cursor: pointer;
+  all: unset;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .slider-btn:hover {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
-.main-testimony img {
-	width: 100%;
-	min-width: 280px;
-	max-height: 800px;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+.main-testimony-image {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
+
+.main-testimony-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+}
+
 
 .main-faq {
   background-color: var(--bg-color);
@@ -710,6 +718,11 @@ body.no-scroll {
 
 .footer-kypaSocial-link-icon img {
 	width: 60px;
+	transition: transform 0.3s ease;
+}
+
+.footer-kypaSocial-link-icon img:hover {
+	transform: scale(0.8);
 }
 
 .footer-policy {
@@ -723,14 +736,20 @@ body.no-scroll {
     flex-direction: row;
   }
 
+	.main-presentation-info { width: 40%; }
+	.main-presentation-img { 
+		width: 60%;
+		height: 400px; 
+	}
+
 	.main-operation-IconBox {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
 		gap: 20px; /* Espacio entre columnas */
 	}
 
-  .main-presentation { padding: 0 30px; }
-  .main-AboutUs { padding: 50px 20px; }
+  .main-presentation { padding: 0px 50px 40px 50px; }
+  .main-AboutUs { padding: 0 20px; }
 
   .main-services {
     align-items: flex-start;
@@ -800,16 +819,16 @@ body.no-scroll {
 	}
 
   .main-presentation-img {
-    width: 350px;
-    height: 370px;
+    height: 500px;
   }
 
   .main-AboutUs-img {
-    width: 100%;
+    width: 50%;
     height: 500px;
   }
 
 	.main-AboutUs-info {
+		width: 50%;
 		gap: 60px;
 	}
 
@@ -819,22 +838,27 @@ body.no-scroll {
   }
 
 	.main-testimony {
-		flex-direction: row; /* Ya lo tienes */
+		flex-direction: row; /* cambia de columna a fila */
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
 	}
 
-		.main-testimony > div:nth-child(1) {
-			flex: 0 0 40%; /* Primer div ocupa 60% */
-	}
-
-	.main-testimony > div:nth-child(2) {
-			flex: 0 0 60%; /* Segundo div ocupa 40% */
-	}
+	
 
   .main-resvation-ImgInfo { height: 500px; }
   .main-operation-IconBox { gap: 150px; }
   .main-faq-option { max-width: 1000px; }
   .toggle { font-size: 50px; }
-	.main-testimony-content { gap: 80px; }
+	.main-testimony-content { 
+		width: 50%;
+		gap: 80px; 
+	}
+
+	.main-testimony-image{
+		width: 50%;
+		min-height: 600px;
+	}
 
 	.footer { 
 		padding: 80px 120px; 
@@ -849,17 +873,17 @@ body.no-scroll {
 	.main-presentation { min-height: calc(100dvh - 180px); }
 	.main-presentation-info { gap: 30px; }
 	.main-presentation-info h1 { font-size: 56px; }
-	.main-presentation-info h3 { font-size: 22px; }
+	.main-presentation-info h2 { font-size: 22px; }
 	.main-presentation-info p { font-size: 16px; }
 	.main-presentation-info a {
 		font-size: 22px;
 		padding: 10px 15px;
 	}
 
-	.main-presentation-img {
-		width: 600px;
-		height: 620px;
-	}
+  .main-presentation-img {
+		max-width: 700px;
+    height: 700px;
+  }
 
 	.main-AnimatedBar { height: 80px; }
 	.main-AnimatedBar-scroll p { font-size: 26px; }
@@ -876,11 +900,9 @@ body.no-scroll {
 
 	.main-resvation { padding: 100px 60px 80px 60px; }
 	.main-testimony {	padding: 80px 150px; }
-	.main-AboutUs { padding-top: 120px; }
 
 	.main-AboutUs-img {
-		width: 800px;
-		height: 700px;
+		height: 800px;
 	}
 
 	.main-AboutUs-info h2,
@@ -937,6 +959,10 @@ body.no-scroll {
 
 	.main-testimony-content { gap: 100px; }
 
+	.main-testimony-image{
+		min-height: 800px;
+	}
+
 	.main-faq {
 		background-color: var(--bg-color);
 		display: flex;
@@ -949,9 +975,3 @@ body.no-scroll {
 	.footer { padding: 80px 200px; }
 	.footer-kypaSocial-link-icon img { width: 90px; }
 }
-
-
-
-
-
-
